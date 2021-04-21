@@ -14,7 +14,7 @@ console.log(numbers);
 // Da li parte un timer di 30 secondi.
 setTimeout(myFunction, 30000);
 function myFunction (){
-    alert("Ti restano 30 secondi per disinnescarmi")
+    alert("Ti restano 30 secondi per disinnescarmi");
 }
 //  }
 // Dopo 30 secondi l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
