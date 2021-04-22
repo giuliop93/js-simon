@@ -21,14 +21,17 @@ function myFunction() {
     // Dopo 30 secondi l'utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
     //pushare i numeroInserito nell'array userChoice
     var userChoice = [];
+    var guessNumbers = [];
     for (i = 0; i < 5; i++) {
         var numeroInserito = parseInt(prompt("Inserisci un numero"));
         userChoice.push(numeroInserito);
     }
-    
-    // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
-    if (correctNumbers.includes(userChoice)) {
-
+    for (i = 0; i < userChoice.length; i++) {
+        if (correctNumbers.includes(userChoice[i])) {
+            guessNumbers.push(userChoice[i])
+        }
     }
+    // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
+        console.log("i numeri indovinati sono" + guessNumbers + "e sono in totale" + guessNumbers.length)
 }
 //  }
